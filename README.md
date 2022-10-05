@@ -2,7 +2,7 @@
 Exemplo para o DEV-TI
 
 ## Como rodar?
-Tenha o Node.js instalado e rode os seguintes comandos
+Tenha o Node.js instalado e rode os seguintes comandos na pasta raiz do projeto
 ```
 npm install
 npm run dev
