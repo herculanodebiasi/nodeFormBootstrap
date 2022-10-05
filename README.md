@@ -8,9 +8,11 @@ npm install
 npm run dev
 ```
 
-Após isso, basta abrir o link disponibilizado no terminal e o projeto estará rodando!
+Após isso, abra a URL http://localhost:8080/ no navegador
 
 
 ## Tecnologias
-- Node.js
-- Bootstrap
+- node.js
+- bootstrap
+- express
+- body-parser
