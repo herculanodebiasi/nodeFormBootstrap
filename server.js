@@ -8,8 +8,8 @@ app.use(express.static('public'));
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.post('/processa-calc', (req, res) => {
-    let valor1 = parseInt(req.body.fValor1);
-    let valor2 = parseInt(req.body.fValor2);
+    const valor1 = parseInt(req.body.fValor1);
+    const valor2 = parseInt(req.body.fValor2);
     const operacao = parseInt(req.body.fOperacao);
 
     let msgAlert = 'O resultado da operação foi: ';
@@ -34,7 +34,7 @@ app.post('/processa-calc', (req, res) => {
     }
 
     msgAlert += resultado;
-    let mensagem = `<h3><div class="alert alert-primary">${msgAlert}`;
+    let mensagem = `<h3><div class="alert alert-primary">${msgAlert}</div></h3>`;
 
     HTML = `
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -44,7 +44,6 @@ app.post('/processa-calc', (req, res) => {
 
         <div class="container" style="margin-top: 0.5rem">
             ${mensagem}
-            </div></h3>
             
             <button type="button" onclick="window.history.back()" class="btn btn-outline-danger">
                 <i class="fas fa-door-open"></i>
